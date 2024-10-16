@@ -6,7 +6,8 @@ namespace MyWebApi.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        public string Index()
+        [HttpGet]
+        public string Get()
         {
             return "HelloWorld";
         }
